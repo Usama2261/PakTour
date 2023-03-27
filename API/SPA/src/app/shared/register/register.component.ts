@@ -17,6 +17,14 @@ export class RegisterComponent implements OnInit {
   }
 
   onSave(){
+    let model: any = {};
+    model["firstName"] = this.user.firstName;
+    model["lastName"] = this.user.lastName;
+    model["userName"] = this.user.userName;
+    model["password"] = this.user.password;
+    model["dob"] = this.user.dob;
+    model["email"] = this.user.email;
+    model["gender"] = this.user.gender;
     this._account.createUser(this.user)
       .subscribe((result) => {
 

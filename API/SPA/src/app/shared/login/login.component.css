@@ -6,7 +6,7 @@
 
 } */
 
-.container{
+.main{
 height: 100%;
 align-content: center;
 background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
@@ -17,10 +17,10 @@ font-family: 'Numans', sans-serif;
 }
 
 .card{
-height: 370px;
+height: 450px;
 margin-top: auto;
 margin-bottom: auto;
-width: 400px;
+width: 450px;
 background-color: rgba(0,0,0,0.5) !important;
 }
 
