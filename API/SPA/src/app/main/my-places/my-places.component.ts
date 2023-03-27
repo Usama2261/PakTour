@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyPlacesComponent implements OnInit {
 
+  display: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addPlace(){
+    this.display = true;
   }
 
 }
