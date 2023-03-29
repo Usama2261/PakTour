@@ -1,20 +1,23 @@
-<div>
+<div class="px-0">
   <div class="d-flex">
     <div class="d-flex align-items-center " id="navbar"> <button class="navbar-toggler" type="button"
         data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent"
         aria-expanded="true" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button> <a
-        class="text-decoration-none fs14 ps-2" href="#">ACQUIRED<span class="fs13 pe-2">.com</span></a> </div>
+        class="text-decoration-none fs14 ps-2" href="#">Pak Tour</a> </div>
     <div id="navbar2" class="d-flex justify-content-end pe-4"> <span class="far fa-user-circle "></span> </div>
   </div>
   <div class="d-md-flex">
     <ul id="navbar-items" class="p-0">
-        <li> <i class="fas fa-th-list"></i> <span class="ps-3 name">Dashboard</span> </li>
-        <li> <i class="fas fa-chart-line"></i> <span class="ps-3 name">Explore</span> </li>
-        <li> <i class="fas fa-clipboard-check"></i> <span class="ps-3 name">Your Experience</span> </li>
+        <li> <i class="fa-solid fa-gauge"></i> <span class="ps-3 name">Dashboard</span> </li>
+        <li> <i class="fa-solid fa-gauge"></i> <span class="ps-3 name">Explore</span> </li>
+        <a routerLink="/myPlaces"><li> <i class="fas fa-clipboard-check"></i> <span class="ps-3 name">Your Experience</span> </li></a>
         <li> <i class="fas fa-suitcase-rolling"></i> <span class="ps-3 name">frauds</span> </li>
         <li> <i class="fas fa-calendar-alt"></i> <span class="ps-3 name">account</span> </li>
         <li> <i class="fas fa-comment-alt"></i> <span class="ps-3 name">reqests</span> </li>
         <li> <i class="fas fa-store-alt"></i> <span class="ps-3 name">merchants</span> </li>
     </ul>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
   </div>
 </div>

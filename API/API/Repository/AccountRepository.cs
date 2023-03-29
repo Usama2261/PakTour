@@ -1,5 +1,5 @@
 ﻿using API.Data.Context;
-using API.Data.Models;
+using API.Data.Entities;
 using API.Models;
 
 namespace API.Repository

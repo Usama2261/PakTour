@@ -170,13 +170,13 @@ ul#navbar-items li {
     padding: 15px 25px;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 14px;
     display: flex;
     align-items: center
 }
 
 ul li .fas {
-    font-size: 16px
+    font-size: 18px
 }
 
 ul#navbar-items li:hover {

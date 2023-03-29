@@ -1,5 +1,6 @@
 using API.Data.Context;
 using API.Repository;
+using API.SeedData;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,9 +14,23 @@ builder.Services.AddDbContext<TourDbContext>(t => t.UseSqlServer(builder.Configu
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddTransient<Seed>();
 builder.Services.AddScoped<AccountRepository>();
 
 var app = builder.Build();
+
+SeedData(app);
+
+void SeedData(IHost app)
+{
+    var scopedFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
+
+    using (var scope = scopedFactory.CreateScope())
+    {
+        var service = scope.ServiceProvider.GetService<Seed>();
+        service.SeedData();
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

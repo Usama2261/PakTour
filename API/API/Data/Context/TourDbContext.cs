@@ -1,4 +1,4 @@
-﻿using API.Data.Models;
+﻿using API.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Data.Context
@@ -9,5 +9,6 @@ namespace API.Data.Context
         : base(options) { }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<PlaceCategory> PlaceCategories { get; set; }
     }
 }

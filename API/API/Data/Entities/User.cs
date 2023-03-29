@@ -1,6 +1,6 @@
 ﻿using static API.Common.ConstantEnums;
 
-namespace API.Data.Models
+namespace API.Data.Entities
 {
     public class User
     {
