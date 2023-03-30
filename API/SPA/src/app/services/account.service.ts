@@ -1,6 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { AppUtils } from '../helpers/app-utils';
+import { AxioHelper } from '../helpers/axios-helper';
 import { User } from '../Models/user';
 
 @Injectable({
@@ -12,21 +14,18 @@ export class AccountService {
 
   
 
-  constructor(private http: HttpClient) { }
+  constructor(private ax: AxioHelper, private utils: AppUtils) { }
 
-
-  createUser(model: any){
-    debugger
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
-    return this.http.post<User>(this.url + "Account/CreateUser", model, httpOptions);
-  }
-
-  getAllUsers(): Observable<User>{
-    return this.http.get<User>(this.url + "Account");
+  getAllUsers(searchText: string): any {
+    return this.ax
+      .getAxiosWithHeaders()
+      .get(
+        `${this.utils.GetAPIBaseUrl()}/api/Asf/GetAccountLocation?searchText=${searchText}`
+      )
+      .then((response: any) => {
+        let result = response.data;
+        return result;
+      });
   }
 
 }

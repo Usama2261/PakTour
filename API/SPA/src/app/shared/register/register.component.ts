@@ -25,10 +25,10 @@ export class RegisterComponent implements OnInit {
     model["dob"] = this.user.dob;
     model["email"] = this.user.email;
     model["gender"] = this.user.gender;
-    this._account.createUser(this.user)
-      .subscribe((result) => {
+    // this._account.createUser(this.user)
+    //   .subscribe((result) => {
 
-      });
+    //   });
   }
 
 }
