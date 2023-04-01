@@ -13,8 +13,8 @@ export const environment = {
     'x-va-hash':
       'RjK5OC3PqvasroWe6UFYogdmQLG9MG/0UfRIK4f5JdLrryczbLyLJLZBxqB4/0L2IyWmOaTiHaExa6TRBSUfJw==',
     'x-va-transaction-id': 'fda17f23-fd71-40c0-bca8-43d6909d4519',
-    Authorization:
-      'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6Ik1yLiBLdW1hciwgQWJoaXNoZWsiLCJzdWIiOiJNci4gS3VtYXIsIEFiaGlzaGVrIiwicm9sZSI6IkxhYiBNYW5hZ2VyIiwibG9naW5pZCI6ImFiaGlzaGVrcDRjbGluaWNhbCIsInB3ZCI6IjhjbHBOemZGQWViZDZsL25kMlIwQlE9PSIsImF1ZCI6Ijc3MDUyODUwMDgzYzQ3MmJhZjE3YmMzYTdmOTVjNGZkIiwiZXhwIjoiMTY3MDA5NTQ2MCIsIm5iZiI6IjE2Njk5MjI2NjAifQ.JMV8bB_bLzEbwfqnCrbyRWmJQKRM31TpYuQKbxwqBbA',
+    // Authorization:
+    //   'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6Ik1yLiBLdW1hciwgQWJoaXNoZWsiLCJzdWIiOiJNci4gS3VtYXIsIEFiaGlzaGVrIiwicm9sZSI6IkxhYiBNYW5hZ2VyIiwibG9naW5pZCI6ImFiaGlzaGVrcDRjbGluaWNhbCIsInB3ZCI6IjhjbHBOemZGQWViZDZsL25kMlIwQlE9PSIsImF1ZCI6Ijc3MDUyODUwMDgzYzQ3MmJhZjE3YmMzYTdmOTVjNGZkIiwiZXhwIjoiMTY3MDA5NTQ2MCIsIm5iZiI6IjE2Njk5MjI2NjAifQ.JMV8bB_bLzEbwfqnCrbyRWmJQKRM31TpYuQKbxwqBbA',
   }
 };
 

@@ -19,5 +19,13 @@ namespace API.Controllers
 
             return Ok(response);
         }
+
+        [HttpGet("GetCategoryByName")]
+        public async Task<IActionResult> GetCategoryByName(string categoryName)
+        {
+            var response = await _exploreRepository.GetCategoryByName(categoryName);
+
+            return Ok(response);
+        }
     }
 }

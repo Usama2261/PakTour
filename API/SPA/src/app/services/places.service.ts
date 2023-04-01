@@ -7,18 +7,30 @@ import { AxioHelper } from '../helpers/axios-helper';
 })
 export class PlacesService {
 
-constructor(private ax: AxioHelper, private utils: AppUtils) { }
+  constructor(private ax: AxioHelper, private utils: AppUtils) { }
 
-getAllCategories(searchText: string): any {
-  return this.ax
-    .getAxiosWithHeaders()
-    .get(
-      `${this.utils.GetAPIBaseUrl()}/api/explore/GetExploreCategories`
-    )
-    .then((response: any) => {
-      let result = response.data;
-      return result;
-    });
-}
+  getAllCategories(): any {
+    return this.ax
+      .getAxiosWithHeaders()
+      .get(
+        `${this.utils.GetAPIBaseUrl()}/api/explore/GetExploreCategories`
+      )
+      .then((response: any) => {
+        let result = response.data;
+        return result;
+      });
+  }
+
+  getCategoryById(categoryName: string): any {
+    return this.ax
+      .getAxiosWithHeaders()
+      .get(
+        `${this.utils.GetAPIBaseUrl()}/api/explore/GetCategoryById?categoryName=${categoryName}`
+      )
+      .then((response: any) => {
+        let result = response.data;
+        return result;
+      });
+  }
 
 }
